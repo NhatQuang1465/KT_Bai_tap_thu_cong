@@ -80,9 +80,9 @@ Mục tiêu là áp dụng quy trình kiểm thử gồm **Test Plan → Test Ca
 ---
 
 ## 6. ⚙️ Môi trường kiểm thử
-- OS: Windows 10 / Windows 11  
+- OS: Windows 11  
 - Browser: Google Chrome  
-- Device: PC / Laptop  
+- Device: Laptop  
 - Test Data: Giả lập  
 
 ---
@@ -95,3 +95,11 @@ Mục tiêu là áp dụng quy trình kiểm thử gồm **Test Plan → Test Ca
 ---
 
 ## 8. 📌 Kết luận
+Dự án giúp áp dụng đầy đủ quy trình kiểm thử phần mềm thủ công, nâng cao kỹ năng thiết kế test case, quản lý bug và đánh giá chất lượng phần mềm.
+
+---
+
+## 9. 👨‍🎓 Thông tin sinh viên
+- Môn học: Kiểm thử phần mềm  
+- Hình thức: Manual Testing  
+- Dự án: Website E-commerce giả lập
