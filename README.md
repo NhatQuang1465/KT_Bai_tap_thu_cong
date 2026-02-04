@@ -1,143 +1,97 @@
-1. Giới thiệu
+# KIỂM THỬ PHẦN MỀM – MANUAL TESTING
 
-Dự án này được xây dựng nhằm thực hành quy trình kiểm thử phần mềm thủ công (Manual Testing) cho một Website E-commerce giả lập.
-Mục tiêu là áp dụng các kiến thức đã học về Test Plan, Test Case, Bug Report, RTM và Test Report để đảm bảo chất lượng phần mềm trước khi phát hành.
+## 1. 📌 Giới thiệu
+Dự án nhằm thực hành **kiểm thử phần mềm thủ công (Manual Testing)** cho Website E-commerce giả lập.  
+Mục tiêu là áp dụng quy trình kiểm thử gồm **Test Plan → Test Case → Bug Report → RTM → Test Report → Metrics** để đánh giá chất lượng phần mềm trước khi phát hành.
 
-Hệ thống được kiểm thử là website bán hàng trực tuyến giả lập, phục vụ cho mục đích học tập, không xử lý dữ liệu thật và không tích hợp cổng thanh toán thực tế.
+---
 
-2. Mục tiêu kiểm thử
+## 2. 🎯 Mục tiêu kiểm thử
+- Kiểm tra các chức năng nghiệp vụ chính của hệ thống
+- Phát hiện và ghi nhận lỗi phát sinh
+- Đánh giá mức độ ổn định của website
+- Đưa ra quyết định **Release / No-Release**
 
-Kiểm tra các chức năng nghiệp vụ chính của website E-commerce
+---
 
-Phát hiện và ghi nhận lỗi trong quá trình sử dụng
+## 3. 📂 Cấu trúc thư mục dự án
 
-Đánh giá mức độ ổn định và khả năng phát hành của hệ thống
+📦 Ecommerce-Manual-Testing  
+├── README.md  
+├── Test_Plan  
+│   └── Test_Plan_Ecommerce.docx  
+├── Test_Cases  
+│   └── Test_Cases_Ecommerce.xlsx  
+├── Bug_Report  
+│   └── Bug_Report.xlsx  
+├── RTM  
+│   └── RTM_Ecommerce.xlsx  
+├── Test_Metrics  
+│   └── Test_Metrics.xlsx  
+└── Test_Report  
+    └── Test_Report.docx  
 
-Thực hành quy trình kiểm thử phần mềm theo chuẩn học thuật
+---
 
-3. Phạm vi kiểm thử (Scope)
-3.1 In-scope
+## 4. 📄 Mô tả thư mục & tài liệu
 
-Các module nằm trong phạm vi kiểm thử bao gồm:
+### 📁 Test_Plan
+- **Test_Plan_Ecommerce.docx**  
+  Mô tả kế hoạch kiểm thử, phạm vi, phương pháp, môi trường, rủi ro và lịch trình kiểm thử.
 
-Authentication
+### 📁 Test_Cases
+- **Test_Cases_Ecommerce.xlsx**  
+  Danh sách test case chi tiết cho các module:
+  - Authentication
+  - Product & Cart
+  - Checkout  
+  Bao gồm: Positive, Negative, Boundary, Validation test case.
 
-Đăng ký
+### 📁 Bug_Report
+- **Bug_Report.xlsx**  
+  Ghi nhận các lỗi phát hiện trong quá trình kiểm thử (Bug ID, mô tả, severity, trạng thái).
 
-Đăng nhập
+### 📁 RTM (Requirement Traceability Matrix)
+- **RTM_Ecommerce.xlsx**  
+  Ma trận truy vết yêu cầu giữa Requirement và Test Case.
 
-Quên mật khẩu
+### 📁 Test_Metrics
+- **Test_Metrics.xlsx**  
+  Thống kê số lượng test case, tỷ lệ pass/fail, số bug theo mức độ nghiêm trọng.
 
-Đăng xuất
+### 📁 Test_Report
+- **Test_Report.docx**  
+  Báo cáo tổng hợp kết quả kiểm thử và quyết định phát hành hệ thống.
 
-Product & Cart
+---
 
-Xem danh sách sản phẩm
+## 5. 🧪 Phạm vi kiểm thử
 
-Tìm kiếm, lọc sản phẩm
+### In-scope
+- Authentication (Đăng ký, đăng nhập, quên mật khẩu, đăng xuất)
+- Product & Cart (Xem sản phẩm, giỏ hàng)
+- Checkout (Thanh toán, đặt hàng, lịch sử đơn hàng)
 
-Thêm / cập nhật / xóa sản phẩm trong giỏ hàng
+### Out-of-scope
+- Performance Testing
+- Automation Testing
+- Security Testing chuyên sâu
 
-Checkout
+---
 
-Nhập địa chỉ giao hàng
+## 6. ⚙️ Môi trường kiểm thử
+- OS: Windows 10 / Windows 11  
+- Browser: Google Chrome  
+- Device: PC / Laptop  
+- Test Data: Giả lập  
 
-Chọn phương thức thanh toán (COD / Visa giả lập)
+---
 
-Đặt hàng
+## 7. 📊 Kết quả kiểm thử (Tóm tắt)
+- 100% test case đã được thực thi
+- Phát hiện lỗi mức **Critical** và **Major**
+- Hệ thống **chưa đủ điều kiện phát hành (No-Release)**
 
-Xem lịch sử đơn hàng
+---
 
-3.2 Out-of-scope
-
-Performance / Load / Stress Testing
-
-Automation Testing
-
-Security Testing chuyên sâu
-
-Kiểm thử đa trình duyệt, đa thiết bị
-
-4. Phương pháp kiểm thử
-
-Manual Testing
-
-Functional Testing
-
-Smoke Testing
-
-Regression Testing (giả lập)
-
-Basic UI Testing
-
-5. Môi trường kiểm thử
-
-Hệ điều hành: Windows 10 / Windows 11
-
-Trình duyệt: Google Chrome (phiên bản mới nhất)
-
-Thiết bị: Máy tính cá nhân
-
-Dữ liệu: Tài khoản, sản phẩm và thanh toán giả lập
-
-6. Cấu trúc thư mục
-📦 Ecommerce-Manual-Testing
- ┣ 📄 README.md
- ┣ 📄 Test_Plan_Ecommerce.docx
- ┣ 📄 Test_Cases_Ecommerce.xlsx
- ┣ 📄 Bug_Report.xlsx
- ┣ 📄 RTM_Ecommerce.xlsx
- ┣ 📄 Test_Metrics.xlsx
- ┣ 📄 Test_Report.docx
-
-7. Mô tả các tài liệu
-
-Test_Plan_Ecommerce.docx
-→ Mô tả kế hoạch kiểm thử, phạm vi, phương pháp, môi trường, rủi ro và lịch trình.
-
-Test_Cases_Ecommerce.xlsx
-→ Danh sách test case chi tiết cho các module (Positive, Negative, Boundary, Validation).
-
-Bug_Report.xlsx
-→ Ghi nhận các lỗi phát hiện trong quá trình kiểm thử, bao gồm severity và trạng thái.
-
-RTM_Ecommerce.xlsx
-→ Ma trận truy vết yêu cầu (Requirement Traceability Matrix).
-
-Test_Metrics.xlsx
-→ Thống kê số lượng test case, bug, tỷ lệ pass/fail.
-
-Test_Report.docx
-→ Báo cáo tổng hợp kết quả kiểm thử và quyết định phát hành.
-
-8. Kết quả kiểm thử (Tóm tắt)
-100% test case đã được thực thi
-
-Phát hiện nhiều lỗi ở mức Critical và Major
-
-Các lỗi nghiêm trọng liên quan đến Cart và Checkout
-
-📌 Kết luận:
-Hệ thống KHÔNG đủ điều kiện phát hành (No-Release) và cần sửa lỗi trước khi kiểm thử lại.
-
-9. Kết luận
-
-Dự án giúp củng cố kiến thức về:
-
-Quy trình kiểm thử phần mềm
-
-Thiết kế test case
-
-Quản lý và báo cáo lỗi
-
-Đánh giá chất lượng phần mềm trước khi phát hành
-
-10. Thông tin sinh viên
-
-Môn học: Kiểm thử phần mềm
-
-Hình thức: Manual Testing
-
-Dự án: Website E-commerce giả lập
-
-
+## 8. 📌 Kết luận
