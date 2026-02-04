@@ -1,5 +1,15 @@
 # KIỂM THỬ PHẦN MỀM – MANUAL TESTING
+## 👨‍🎓 Thông tin nhóm thực hiện
 
+| STT | Họ và tên            | MSV       |
+|-----|----------------------|-----------|
+| 1   | Trần Vinh Trí        | BIT230407 |
+| 2   | Nguyễn Trường Giang  | BIT230133 |
+| 3   | Bùi Quang Hiếu       | BIT230157 |
+| 4   | Nguyễn Nhật Quang    | BIT230346 |
+| 5   | Lê Trung Hoàng       | BIT230174 |
+
+---
 ## 1.  Giới thiệu
 Dự án nhằm thực hành **kiểm thử phần mềm thủ công (Manual Testing)** cho Website E-commerce giả lập.  
 Mục tiêu là áp dụng quy trình kiểm thử gồm **Test Plan → Test Case → Bug Report → RTM → Test Report → Metrics** để đánh giá chất lượng phần mềm trước khi phát hành.
@@ -97,10 +107,4 @@ Mục tiêu là áp dụng quy trình kiểm thử gồm **Test Plan → Test Ca
 ## 8.  Kết luận
 Dự án giúp áp dụng đầy đủ quy trình kiểm thử phần mềm thủ công, nâng cao kỹ năng thiết kế test case, quản lý bug và đánh giá chất lượng phần mềm.
 
----
-
-## 9.  Thông tin sinh viên
-- Môn học: Kiểm thử phần mềm  
-- Hình thức: Manual Testing  
-- Dự án: Website E-commerce giả lập
 
